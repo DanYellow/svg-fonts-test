@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/iconmonstr-iconic-font.min.css" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-size: 16px;
+        font-family: Arial, serif;
+        margin: 0 auto;
+        max-width: 1280px;
+      }
+
+      .fonts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 35px;
+      }
+
+      .fonts li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icon {
+        transition-duration: 0.4s;
+        transition-delay: 0s;
+      }
+
+      .icon:hover {
+        filter: hue-rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Alors ici toutes mes icônes proviennet de la police d'écriture
+      "iconmonstr-iconic-font" chargé via le css. Pour utiliser la police
+      d'écriture, il suffit juste qu'un élément ait la classe "im", mais ceci
+      n'est pas suffisant, il faut ajouter la classe correspondant à l'icône,
+      c'est un peu comme une lettre. Au-delà de leur poids très faible (un svg
+      c'est du vectoriel), les svg fonts présentes les avantages suivants :<br />
+      - Personnalisable comme du texte html, on peut donc changer la couleur ou
+      la taille (et ce sans perte) - Possibilité de mettre des transitions,
+      notamment les couleurs ou la taille
+    </p>
+    <ul class="fonts">
+      <li>
+        <span class="im im-plane icon"></span>
+        <span>classes : im im-plane</span>
+      </li>
+
+      <li>
+        <span
+          class="im im-plane icon"
+          style="font-size: 65px; color: red;"
+        ></span>
+        <span
+          >classes : im im-plane <br />style : font-size: 65px; color:
+          red;</span
+        >
+      </li>
+
+      <li>
+        <span
+          class="im im-plane icon"
+          style="font-size: 10px; color: purple;"
+        ></span>
+        <span
+          >classes : im im-plane <br />style : font-size: 10px; color:
+          purple;</span
+        >
+      </li>
+      <li>
+        <span class="im im-link icon"></span>
+        <span>classes : im im-link</span>
+      </li>
+
+      <li>
+        <span class="im im-link" style="font-size: 65px; color: red;"></span>
+        <span
+          >classes : im im-link <br />style : font-size: 65px; color: red;</span
+        >
+      </li>
+
+      <li>
+        <span
+          class="im im-link icon"
+          style="font-size: 30px; color: grey;"
+        ></span>
+        <span
+          >classes : im im-link <br />style : font-size: 30px; color:
+          grey;</span
+        >
+      </li>
+
+      <li>
+        <span class="im im-menu icon"></span>
+        <span>classes : im im-menu</span>
+      </li>
+
+      <li>
+        <span
+          class="im im-menu icon"
+          style="font-size: 65px; color: red;"
+        ></span>
+        <span
+          >classes : im im-menu <br />style : font-size: 65px; color: red;</span
+        >
+      </li>
+
+      <li>
+        <span
+          class="im im-menu icon"
+          style="font-size: 30px; color: orange;"
+        ></span>
+        <span
+          >classes : im im-menu <br />style : font-size: 30px; color:
+          orange;</span
+        >
+      </li>
+    </ul>
+  </body>
+</html>
